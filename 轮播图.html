@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>四角天空</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            /*background: url(sky.jpg);*/
+        }
+        video{
+            width: 500px;
+        }
+        img{
+            width:100%;
+            height:200px;
+        }
+        .item{
+            height:300px;
+            overflow: hidden;
+        }
+        .item img{
+            height:200px;
+        }
+    </style>
+</head> 
+<body>
+    <!-- <audio src="love.mp3" controls="controls"></audio> -->
+    <h1>王相博的第一个网站</h1>
+    <!-- 轮播开始 -->
+    <div id="myCarousel" data-interval="1000" interval="1000" class="carousel slide">
+        <!-- 轮播指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <!-- 轮播项目 -->
+        <div class="carousel-inner" data-interval="1000">
+            <div class="item active">
+                <img src="zuozhu.jpg" alt="佐助"> <!--这里修改第一张图片-->
+            </div>
+            <div class="item">
+                <img src="dongshilang.jpg" alt="Second slide"><!--这里修改第二张图片-->
+            </div>
+            <div class="item">
+                <img src="nv.jpg" alt="Third slide"><!--这里修改第三张图片-->
+            </div>
+            <div class="item">
+                <img src="huangmao.jpg" alt="Fourth slide"><!--这里修改第四张图片-->
+            </div>
+        </div>
+        <!-- 轮播导航 -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    <!-- 轮播结束 -->
+<script>
+    $('#myCarousel').carousel({
+        interval: 500
+    })
+</script>
+</body>
+</html>
