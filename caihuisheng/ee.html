@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    span
+    { color:red; }
+    body{
+        background: url(song.jpg);
+    }
+    video{
+        height:300px;
+    }
+</style>
+</head>
+
+<body>
+    <h1><span>老呆的第一个网页</span></h1>
+    <img src="02.jpg">
+    <!-- <audio src="kanong.mp3" controls="controls"></audio> -->
+    <!-- 轮播开始 -->
+    <div id="myCarousel" class="carousel slide">
+        <!-- 轮播指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <!-- 轮播项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="03.jpg" alt="佐助"> <!--这里修改第一张图片-->
+            </div>
+            <div class="item">
+                <img src="04.jpg" alt="Second slide"><!--这里修改第二张图片-->
+            </div>
+            <div class="item">
+                <img src="05.jpg" alt="Third slide"><!--这里修改第三张图片-->
+            </div>
+            <div class="item">
+                <img src="02.jpg" alt="Fourth slide"><!--这里修改第四张图片-->
+            </div>
+        </div>
+        <!-- 轮播导航 -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    <!-- 轮播结束 -->
+<script type="text/javascript">
+    $('#myCarousel').carousel({
+        interval: 1000
+    })
+</script>
+</body>
+</html>
