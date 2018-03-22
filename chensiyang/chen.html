@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <style>
+     body{
+        background: url(CSY.jpg);
+        background-size: 100%;
+     }
+     video{
+        float: right;
+        height:100vh;
+     }
+     .item img{
+		height: 400px!important;
+     }
+     .zi{
+        color: pink;
+        font-size: 35px;
+
+     }
+     .r{
+     	position: absolute;
+     	top:0;
+     	right: 0;
+     }
+     h1{
+     	text-align: center;
+     	color: red!important;
+     }
+     .jiu{
+     	margin-right:140px; 
+     	height: 600px;
+     	transform:rotate(-90deg);
+     }
+     </style>
+     <title>陈思阳的第一个网页</title>
+   <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     </head>
+     <body>
+     <h1>大吉大利，今晚吃鸡.</h1>
+         <audio src="BGM.mp3" controls="controls" autoplay="autoplay"></audio>
+     <p class="zi">我今天玩绝地求生第三个圈的时候，有个大佬厉害，<br>
+     头上插着40多支箭，身上的弹孔数不清，至今还是没掉<br>
+     一丝血，这个那sks的不停在打他，旁边那个拿sks的大<br>
+     佬也很厉害，枪枪爆头子弹还是连发，已经开了2000多<br>
+     枪也没见换子弹，如果不是我飞在天上，我都不敢相信<br>
+     这游戏这么多超能力者.<br></p>
+     <img class="r" src="5005.jpg">
+    <!-- 轮播开始 -->
+    <div id="myCarousel" class="carousel slide">
+        <!-- 轮播指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <!-- 轮播项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="111.jpg" alt="佐助"> <!--这里修改第一张图片-->
+            </div>
+            <div class="item">
+                <img src="222.jpg" alt="Second slide"><!--这里修改第二张图片-->
+            </div>
+            <div class="item">
+                <img src="333.jpg" alt="Third slide"><!--这里修改第三张图片-->
+            </div>
+            <div class="item">
+                <img src="444.jpg" alt="Fourth slide"><!--这里修改第四张图片-->
+            </div>
+        </div>
+        <!-- 轮播导航 -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    <!-- 轮播结束 -->
+    <script type="text/javascript">
+    $('#myCarousel').carousel({
+        interval: 2000
+    })
+</script>
+         <video src="999.mp4" controls="controls" autoplay="autoplay"></video>
+         <video src="98k.mp4" controls="controls" autoplay="autoplay"></video>
+         <video class="jiu" src="AWM.mp4" controls="controls" autoplay="autoplay"></video>
+</body>
+</html>
